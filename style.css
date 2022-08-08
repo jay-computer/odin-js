@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Georgia, Times, 'Times New Roman', serif;
-
+    
 }
 
 header {
@@ -50,13 +50,24 @@ header > form > input {
 }
 
 .submit-book {
-    text-align: center; 
+    text-align: right; 
     position: absolute;
-    justify-self: center;  
+    justify-self: center;
+    width: 275px;
+    transform: translate(0, 150vh);
+    transition-duration: 500ms;
 }
 
-.active {
+.formButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.submit-book.active {
     border: solid green 5px;
     color: green;
     transform: translate(0, 50%);
+    transition-duration: 500ms;
+
 }
