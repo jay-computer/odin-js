@@ -36,7 +36,8 @@ header > form > input {
     min-height: 100px;
     max-height: 250px;
     padding-top: 8px;
-    font-size: 32px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .addBook{
@@ -65,9 +66,14 @@ header > form > input {
 }
 
 .submit-book.active {
-    border: solid green 5px;
-    color: green;
+    border: solid black 5px;
+    background-color: rgba(255, 255, 255, 1);
     transform: translate(0, 50%);
     transition-duration: 500ms;
 
+}
+
+.title {
+    font-style: italic;
+    font-size: 30px;
 }
